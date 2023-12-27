@@ -1,0 +1,26 @@
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import { SubTiltle, CategoryCard } from "../index";
+import clothe from "../../assets/images/clothe.png";
+import cat2 from "../../assets/images/cat2.png";
+import labtop from "../../assets/images/labtop.png";
+import sale from "../../assets/images/sale.png";
+import pic from "../../assets/images/pic.png";
+
+const HomeCategory = () => {
+  return (
+    <Container>
+      <SubTiltle title='التصنيفات' btntitle='المزيد' pathText='/allcategory' />
+      <Row className='my-2 d-flex justify-content-between'>
+        <CategoryCard title='اجهزة منزلية' img={clothe} background='#F4DBA4' />
+        <CategoryCard title='اجهزة منزلية' img={cat2} background='#F4DBA4' />
+        <CategoryCard title='اجهزة منزلية' img={labtop} background='#0034FF' />
+        <CategoryCard title='اجهزة منزلية' img={sale} background='#F4DBA4' />
+        <CategoryCard title='اجهزة منزلية' img={clothe} background='#FF6262' />
+        <CategoryCard title='اجهزة منزلية' img={pic} background='#F4DBA4' />
+      </Row>
+    </Container>
+  );
+};
+
+export default HomeCategory;
