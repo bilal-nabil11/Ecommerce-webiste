@@ -27,13 +27,13 @@ body {
 }
 .nav-text {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 .sub-tile {
-  color: #272727;
+  color: $dark-gray;
   font-family: $main-font;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 28px;
@@ -68,12 +68,12 @@ body {
 }
 
 .slider-title {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 32px;
 }
 
 .slider-text {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 800;
   line-height: 53px;
 }
@@ -84,12 +84,13 @@ body {
   width: 130px;
 }
 
-.categoty-card {
+.category-card {
   height: 140px;
   width: 100%;
   border-radius: 50%;
   opacity: 0.3;
   &-img {
+    object-fit: cover;
     max-width: 110px;
     max-height: 100px;
     position: absolute;
@@ -97,9 +98,9 @@ body {
     left: 10%;
   }
   &-text {
-    color: $card-main-color;
+    color: $mid-gray;
     font-family: $main-font;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: bold;
     text-align: center;
   }
@@ -117,21 +118,21 @@ body {
   }
 
   &-title {
-    color: $card-main-color;
-    font-size: 16px;
+    color: $mid-gray;
+    font-size: 1rem;
     line-height: 20px;
     text-align: right;
   }
 
   &-price {
-    color: #272727;
-    font-size: 21px;
+    color: $dark-gray;
+    font-size: 1.313rem;
     font-weight: bold;
     line-height: 28px;
   }
   &-rate {
     color: #ffc107;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: bold;
     line-height: 19px;
   }
@@ -142,14 +143,14 @@ body {
   padding: 5px;
   height: 35px;
   width: 90px;
-  color: #272727;
+  color: $dark-gray;
   text-decoration: none;
   text-align: center;
-  border: 1px solid #272727;
+  border: 1px solid $dark-gray;
   border-radius: 14px;
   &:hover {
-    background-color: #272727;
-    border: 1px solid #272727;
+    background-color: $dark-gray;
+    border: 1px solid $dark-gray;
     color: #f9f9f9;
     border-radius: 14px;
     cursor: pointer;
@@ -157,58 +158,60 @@ body {
 }
 
 /* discount setion */
-.discount-backcolor {
-  height: 130px;
-  border-radius: 8px;
-  background: radial-gradient(circle, #767676 0%, #4d4f50 100%, #494c4d 100%);
+.discount {
+  &-backcolor {
+    height: 130px;
+    border-radius: 8px;
+    background: radial-gradient(circle, #767676 0%, #4d4f50 100%, #494c4d 100%);
+  }
+  &-title {
+    color: #ffffff;
+    font-family: $secondary-font;
+    font-size: 1.313rem;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 39px;
+  }
+  &-img {
+    max-height: 130px;
+    max-width: 80%;
+  }
 }
-.discount-title {
-  color: #ffffff;
-  font-family: Cairo;
-  font-size: 21px;
-  font-weight: bold;
-  letter-spacing: 0;
-  line-height: 39px;
-}
-.dicount-img {
-  max-height: 130px;
-  max-width: 80%;
-}
+
 /* end discount */
 
 /* foter */
-.footer-background {
-  background-color: #ffffff;
-}
 
 .footer {
   width: 100%;
-}
-.footer-shroot {
-  color: #979797;
+  background-color: #ffffff;
   font-family: $main-font;
-  font-size: 13px;
+  color: $light-gray;
+  font-size: 0.813rem;
   font-weight: bold;
-  letter-spacing: 0;
-  line-height: 18px;
-  cursor: pointer;
+  &-shroot {
+    cursor: pointer;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+  &-phone {
+    cursor: pointer;
+  }
+}
+@media (max-width: 576px) {
+  .changeContent {
+    align-items: center !important;
+    justify-content: center !important;
+  }
 }
 
-.footer-phone {
-  color: #979797;
-  font-family: "$main-font";
-  font-size: 13px;
-  font-weight: bold;
-  text-align: right;
-  cursor: pointer;
-}
 /* end footer */
 
 /* card filter style */
 .search-count-text {
-  color: #979797;
+  color: $light-gray;
   font-family: $main-font;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 20px;
@@ -223,12 +226,12 @@ body {
 }
 
 .card-filter-item {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
   padding: 10px;
 }
 .card-filter-item:hover {
-  background-color: #272727;
+  background-color: $dark-gray;
   color: #ffffff;
 }
 /* end card filter */
@@ -242,9 +245,9 @@ body {
 }
 
 .cat-text {
-  color: #979797;
-  font-family: "$main-font";
-  font-size: 12px;
+  color: $light-gray;
+  font-family: $main-font;
+  font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 23px;
@@ -252,17 +255,17 @@ body {
 }
 
 .cat-title {
-  color: $card-main-color;
+  color: $mid-gray;
   font-family: $main-font;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: normal;
   text-align: right;
 }
 
 .cat-rate {
   color: #ffc107;
-  font-family: "$main-font";
-  font-size: 14px;
+  font-family: $main-font;
+  font-size: 0.875remrem;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 19px;
@@ -270,9 +273,9 @@ body {
 }
 
 .barnd-text {
-  color: $card-main-color;
-  font-family: "$main-font";
-  font-size: 18px;
+  color: $mid-gray;
+  font-family: $main-font;
+  font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 24px;
@@ -285,9 +288,9 @@ body {
   border-radius: 50%;
 }
 .product-description {
-  color: $card-main-color;
-  font-family: Cairo;
-  font-size: 14px;
+  color: $mid-gray;
+  font-family: $secondary-font;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0;
   line-height: 26px;
@@ -300,9 +303,9 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 9px;
-  color: $card-main-color;
-  font-family: "$main-font";
-  font-size: 12px;
+  color: $mid-gray;
+  font-family: $main-font;
+  font-size: 0.75rem;
   font-weight: bold;
   background-color: #ffffff;
 }
@@ -313,10 +316,10 @@ body {
   height: 45px;
   border-radius: 9px;
   border: none;
-  background-color: #272727;
+  background-color: $dark-gray;
   color: #ffffff;
-  font-family: "$main-font";
-  font-size: 14px;
+  font-family: $main-font;
+  font-size: 0.875rem;
   font-weight: normal;
 }
 .product-cart-add:hover {
@@ -334,12 +337,12 @@ body {
 /* pagination */
 .page-link {
   background-color: #f9f9f9 !important;
-  color: #272727 !important;
+  color: $dark-gray !important;
   border-radius: 10px !important;
   border: solid 1px 272727 !important;
 }
 .page-link:hover {
-  background-color: #272727 !important;
+  background-color: $dark-gray !important;
   color: white !important;
   border: solid 1px 272727 !important;
 }
@@ -352,9 +355,9 @@ body {
 }
 
 .cat-text-header {
-  color: #979797;
-  font-family: "$main-font";
-  font-size: 12px;
+  color: $light-gray;
+  font-family: $main-font;
+  font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 23px;
@@ -363,7 +366,7 @@ body {
   cursor: pointer;
 }
 .cat-text-header:hover {
-  color: $card-main-color;
+  color: $mid-gray;
 }
 
 /* end categoery header */
@@ -374,13 +377,13 @@ body {
   box-sizing: border-box;
   height: 37px;
   width: 375px;
-  border: 1px solid #979797;
+  border: 1px solid $light-gray;
   border-radius: 8px;
 }
 .title-login {
-  color: $card-main-color;
+  color: $mid-gray;
   font-family: $main-font;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: 800;
   letter-spacing: 0;
   line-height: 28px;
@@ -392,7 +395,7 @@ body {
   border-radius: 9px;
   border: none;
   color: white;
-  background-color: #272727;
+  background-color: $dark-gray;
 }
 .btn-login:hover {
   color: rgb(206, 204, 204);
@@ -402,9 +405,9 @@ body {
 
 /* cart page */
 .cart-title {
-  color: $card-main-color;
+  color: $mid-gray;
   font-family: $main-font;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: 800;
   letter-spacing: 0;
   line-height: 28px;
@@ -420,9 +423,9 @@ body {
   box-sizing: border-box;
   height: 46px;
   width: 90%;
-  border: 1px solid #979797;
-  font-family: "$main-font";
-  font-size: 12px;
+  border: 1px solid $light-gray;
+  font-family: $main-font;
+  font-size: 0.75rem;
   font-weight: normal;
 }
 .copon-btn {
@@ -435,10 +438,10 @@ body {
   padding-right: 10px;
   padding-left: 10px !important;
   border-radius: 0 !important;
-  background-color: #272727;
+  background-color: $dark-gray;
   color: #ffff !important;
-  font-family: "$main-font";
-  font-size: 12px;
+  font-family: $main-font;
+  font-size: 0.75rem;
   font-weight: normal;
 }
 
@@ -460,9 +463,9 @@ body {
 }
 
 .admin-side-text {
-  color: #272727;
-  font-family: "$main-font";
-  font-size: 12px;
+  color: $dark-gray;
+  font-family: $main-font;
+  font-size: 0.75rem;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 20px;
@@ -473,23 +476,23 @@ body {
 }
 
 .admin-side-text:hover {
-  background-color: #272727;
+  background-color: $dark-gray;
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .admin-content-text {
-  color: $card-main-color;
+  color: $mid-gray;
   font-family: $main-font;
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: 800;
   letter-spacing: 0;
   line-height: 28px;
   text-align: right;
 }
 .item-delete-edit {
-  color: #979797;
-  font-family: "$main-font";
-  font-size: 16px;
+  color: $light-gray;
+  font-family: $main-font;
+  font-size: 1rem;
   letter-spacing: 0;
   line-height: 30px;
   text-align: right;
@@ -497,9 +500,9 @@ body {
 }
 
 .text-form {
-  color: #979797;
-  font-family: "$main-font";
-  font-size: 16px;
+  color: $light-gray;
+  font-family: $main-font;
+  font-size: 1rem;
   letter-spacing: 0;
   line-height: 20px;
   text-align: right;
@@ -507,22 +510,22 @@ body {
 .input-form {
   height: 37px;
   width: 100%;
-  border: 1px solid #979797;
+  border: 1px solid $light-gray;
   border-radius: 8px;
   background-color: #f9f9f9;
 }
 .input-form-area {
   width: 100%;
-  border: 1px solid #979797;
+  border: 1px solid $light-gray;
   border-radius: 8px;
   background-color: #f9f9f9;
 }
 .select {
   box-sizing: border-box;
   height: 40px;
-  color: #979797;
+  color: $light-gray;
   width: 100%;
-  border: 1px solid #979797;
+  border: 1px solid $light-gray;
   border-radius: 8px;
 }
 .btn-save {
@@ -531,7 +534,7 @@ body {
   height: 46px;
   width: 150px;
   border-radius: 9px;
-  background-color: #272727;
+  background-color: $dark-gray;
 }
 .btn-save:hover {
   color: rgb(164, 164, 164);
@@ -541,7 +544,7 @@ body {
   color: white;
   height: 45px;
   border-radius: 9px;
-  background-color: #272727;
+  background-color: $dark-gray;
 }
 .btn-a:hover {
   color: rgb(164, 164, 164);
@@ -559,24 +562,24 @@ body {
   box-shadow: 0 1px 2px 0 rgba(151, 151, 151, 0.5);
 }
 .rate-count {
-  color: #979797;
-  font-family: "$main-font";
-  font-size: 12px;
+  color: $light-gray;
+  font-family: $main-font;
+  font-size: 0.75rem;
   letter-spacing: 0;
   line-height: 23px;
 }
 .rate-name {
-  color: $card-main-color;
-  font-family: "$main-font";
-  font-size: 14px;
+  color: $mid-gray;
+  font-family: $main-font;
+  font-size: 0.875rem;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 19px;
 }
 .rate-description {
-  color: $card-main-color;
-  font-family: "$main-font";
-  font-size: 14px;
+  color: $mid-gray;
+  font-family: $main-font;
+  font-size: 0.875rem;
   letter-spacing: 0;
   line-height: 19px;
   text-align: right;
@@ -592,16 +595,16 @@ body {
   box-shadow: 0 1px 2px 0 rgba(151, 151, 151, 0.5);
 }
 .order-title {
-  color: #272727;
-  font-family: "$main-font";
-  font-size: 16px;
+  color: $dark-gray;
+  font-family: $main-font;
+  font-size: 1rem;
   font-weight: bold;
 }
 
 .stat {
-  color: #979797;
-  font-family: Cairo;
-  font-size: 16px;
+  color: $light-gray;
+  font-family: $secondary-font;
+  font-size: 1rem;
   letter-spacing: 0;
   line-height: 30px;
   text-align: right;
@@ -624,7 +627,7 @@ body {
   width: 100%;
   color: white;
   border-radius: 9px;
-  background-color: #272727;
+  background-color: $dark-gray;
 }
 
 /* user address */
@@ -641,18 +644,18 @@ body {
 
 /* filter side style */
 .filter-title {
-  color: $card-main-color;
-  font-family: "$main-font";
-  font-size: 16px;
+  color: $mid-gray;
+  font-family: $main-font;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0;
   line-height: 20px;
   text-align: right;
 }
 .filter-sub {
-  color: $card-main-color;
-  font-family: "$main-font";
-  font-size: 12px;
+  color: $mid-gray;
+  font-family: $main-font;
+  font-size: 0.75rem;
   letter-spacing: 0;
   line-height: 17px;
   text-align: center;
